@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <xhtml:meta xmlns:xhtml="http://www.w3.org/1999/xhtml" name="robots" content="noindex" />
+    <title>Example Reader's bookshelf: read</title>
+    <copyright><![CDATA[Copyright (C) 2026 Goodreads Inc. All rights reserved.]]></copyright>
+    <link><![CDATA[https://www.goodreads.com/review/list_rss/1234567?shelf=read]]></link>
+    <atom:link href="https://www.goodreads.com/review/list_rss/1234567?shelf=read" rel="self" type="application/rss+xml"/>
+    <description><![CDATA[Example Reader's bookshelf: read]]></description>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 28 Sep 2026 09:00:00 -0700</lastBuildDate>
+    <ttl>60</ttl>
+    <item>
+      <guid><![CDATA[https://www.goodreads.com/review/show/1000000001?utm_medium=api&utm_source=rss]]></guid>
+      <pubDate><![CDATA[Fri, 25 Sep 2026 11:48:39 -0700]]></pubDate>
+      <title>Project Hail Mary</title>
+      <link><![CDATA[https://www.goodreads.com/review/show/1000000001?utm_medium=api&utm_source=rss]]></link>
+      <book_id>54493401</book_id>
+      <book_image_url><![CDATA[https://i.gr-assets.com/images/example.jpg]]></book_image_url>
+      <book_description><![CDATA[Ryland Grace is the sole survivor on a desperate, last-chance mission.<br /><br />A <i>thriller</i>.]]></book_description>
+      <book id="54493401">
+        <num_pages>476</num_pages>
+      </book>
+      <author_name>Andy Weir</author_name>
+      <isbn>0593135202</isbn>
+      <user_name>Example Reader</user_name>
+      <user_rating>5</user_rating>
+      <user_read_at><![CDATA[Fri, 25 Sep 2026 00:00:00 +0000]]></user_read_at>
+      <user_date_added><![CDATA[Fri, 25 Sep 2026 11:48:39 -0700]]></user_date_added>
+      <user_date_created><![CDATA[Tue, 24 Mar 2026 08:43:09 -0700]]></user_date_created>
+      <user_shelves></user_shelves>
+      <user_review></user_review>
+      <average_rating>4.52</average_rating>
+      <book_published>2021</book_published>
+      <description><![CDATA[<a href="https://www.goodreads.com/book/show/54493401-project-hail-mary">...</a>]]></description>
+    </item>
+    <item>
+      <guid><![CDATA[https://www.goodreads.com/review/show/1000000002?utm_medium=api&utm_source=rss]]></guid>
+      <pubDate><![CDATA[Sun, 20 Sep 2026 10:00:00 -0700]]></pubDate>
+      <title>Pride &amp; Prejudice (Penguin Classics)</title>
+      <link><![CDATA[https://www.goodreads.com/review/show/1000000002?utm_medium=api&utm_source=rss]]></link>
+      <book_id>1885</book_id>
+      <book id="1885">
+        <num_pages></num_pages>
+      </book>
+      <author_name>Jane Austen</author_name>
+      <isbn></isbn>
+      <user_name>Example Reader</user_name>
+      <user_rating>0</user_rating>
+      <user_read_at></user_read_at>
+      <user_date_added><![CDATA[Sun, 20 Sep 2026 10:00:00 -0700]]></user_date_added>
+      <user_date_created><![CDATA[Sun, 20 Sep 2026 10:00:00 -0700]]></user_date_created>
+      <user_shelves>classics, favorites</user_shelves>
+      <user_review></user_review>
+      <average_rating>4.29</average_rating>
+      <book_published>1813</book_published>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <guid><![CDATA[https://www.goodreads.com/review/show/1000000003?utm_medium=api&utm_source=rss]]></guid>
+      <pubDate><![CDATA[Thu, 01 Jan 2026 08:00:00 -0800]]></pubDate>
+      <title><![CDATA[The Fellowship of the Ring (The Lord of the Rings, #1)]]></title>
+      <link><![CDATA[https://www.goodreads.com/review/show/1000000003?utm_medium=api&utm_source=rss]]></link>
+      <book_id>34</book_id>
+      <book id="34">
+        <num_pages>432</num_pages>
+      </book>
+      <author_name>J.R.R. Tolkien</author_name>
+      <isbn>0618346252</isbn>
+      <user_name>Example Reader</user_name>
+      <user_rating>4</user_rating>
+      <user_read_at><![CDATA[Wed, 31 Dec 2025 00:00:00 +0000]]></user_read_at>
+      <user_date_added><![CDATA[Thu, 01 Jan 2026 08:00:00 -0800]]></user_date_added>
+      <user_date_created><![CDATA[Thu, 01 Jan 2026 08:00:00 -0800]]></user_date_created>
+      <user_shelves></user_shelves>
+      <user_review></user_review>
+      <average_rating>4.38</average_rating>
+      <book_published>1954</book_published>
+      <description><![CDATA[]]></description>
+    </item>
+  </channel>
+</rss>

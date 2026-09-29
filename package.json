@@ -5,7 +5,6 @@
   "description": "Chrome extension that syncs Goodreads shelves to StoryGraph.",
   "type": "module",
   "scripts": {
-    "test": "node --test tests/"
-  },
-  "license": "MIT"
+    "test": "node --test \"tests/*.test.js\""
+  }
 }

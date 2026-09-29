@@ -1,0 +1,12 @@
+{
+  "_note": "Search results as parsed by src/content/storygraph.js from live StoryGraph pages (public book data).",
+  "projectHailMary": [
+    { "sgId": "ac3ea915-993d-4f30-8632-0f91e4ad0704", "title": "Project Hail Mary", "label": "Project Hail Mary by Andy Weir" },
+    { "sgId": "3357dc3e-6f66-47ce-b248-07f0954b57c4", "title": "Andy Weir (Project Hail Mary [Hardcover], Artemis, The Martian) 3 Books Collection Paperback 1 January 2021", "label": "Andy Weir (Project Hail Mary [Hardcover], Artemis, The Martian) 3 Books Collection Paperback 1 January 2021 by Andy Weir" },
+    { "sgId": "7de3c963-d1fa-463f-9ca2-3e7f01f0f432", "title": "Summary & Analysis of Andy Weir Book: Project Hail Mary", "label": "Summary & Analysis of Andy Weir Book: Project Hail Mary by PressPrint" },
+    { "sgId": "8193ad46-d2d1-40fc-87c5-a015e2e91085", "title": "Summary: Project Hail Mary: by Andy Weir", "label": "Summary: Project Hail Mary: by Andy Weir by Zara Library" }
+  ],
+  "elementsOfStyle": [
+    { "sgId": "182b572c-87b4-41da-9e9d-27ebe0315234", "title": "The Elements of Style", "label": "The Elements of Style by William Strunk Jr., E.B. White" }
+  ]
+}
