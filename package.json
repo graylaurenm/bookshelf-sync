@@ -1,0 +1,11 @@
+{
+  "name": "bookshelf-sync",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chrome extension that syncs Goodreads shelves to StoryGraph.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/"
+  },
+  "license": "MIT"
+}

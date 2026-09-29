@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bookshelf Sync — Options</title>
+  <link rel="stylesheet" href="../ui.css">
+  <style>
+    body { max-width: 560px; margin: 0 auto; padding: 24px 16px; }
+    label { display: block; font-weight: 600; margin: 16px 0 4px; }
+    .hint { color: var(--muted); font-size: 12px; margin-top: 4px; }
+    .inline { display: flex; gap: 8px; align-items: center; }
+    .checks label { font-weight: 400; margin: 4px 0; display: flex; gap: 6px; align-items: center; }
+    .toggle { display: flex; gap: 8px; align-items: center; font-weight: 600; margin-top: 16px; }
+    footer { margin-top: 24px; display: flex; gap: 12px; align-items: center; }
+    #saved { color: var(--good); }
+  </style>
+</head>
+<body>
+  <h1>Bookshelf Sync</h1>
+  <p class="muted">Copies your Goodreads shelves to StoryGraph using the StoryGraph session in this Chrome profile. No passwords are stored.</p>
+
+  <label for="grUserId">Goodreads user ID</label>
+  <input type="text" id="grUserId" inputmode="numeric" placeholder="12345678">
+  <div class="hint">The number in your profile URL: goodreads.com/user/show/<b>12345678</b>-name</div>
+
+  <label for="feedKey">Goodreads feed key <span class="muted">(optional)</span></label>
+  <div class="inline">
+    <input type="text" id="feedKey" placeholder="Detected automatically when you're signed in to Goodreads">
+    <button id="detect">Detect</button>
+  </div>
+  <div class="hint">Lets the extension read your shelves even if your Goodreads profile is private. Stored only in this browser.</div>
+
+  <label>Shelves to sync</label>
+  <div class="checks">
+    <label><input type="checkbox" data-shelf="read"> read (status, finish date, rating)</label>
+    <label><input type="checkbox" data-shelf="currently-reading"> currently-reading</label>
+    <label><input type="checkbox" data-shelf="to-read"> to-read</label>
+  </div>
+
+  <label for="interval">Check every (minutes)</label>
+  <input type="number" id="interval" min="15" max="1440" step="5" style="width: 120px">
+  <div class="hint">15 to 1440. Only runs while Chrome is open.</div>
+
+  <label class="toggle"><input type="checkbox" id="dryRun"> Dry run — match and preview, but never write to StoryGraph</label>
+
+  <footer>
+    <button id="save" class="primary">Save</button>
+    <span id="saved" hidden>Saved</span>
+    <span id="err" style="color: var(--bad)"></span>
+  </footer>
+
+  <script type="module" src="options.js"></script>
+</body>
+</html>

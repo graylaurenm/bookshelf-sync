@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Bookshelf Sync",
+  "version": "0.1.0",
+  "description": "Syncs Goodreads shelves to StoryGraph using your existing StoryGraph session.",
+  "minimum_chrome_version": "120",
+  "permissions": ["storage", "alarms", "scripting"],
+  "host_permissions": [
+    "https://www.goodreads.com/*",
+    "https://app.thestorygraph.com/*"
+  ],
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://app.thestorygraph.com/*"],
+      "js": ["src/content/storygraph.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Bookshelf Sync",
+    "default_popup": "src/popup/popup.html"
+  },
+  "options_page": "src/options/options.html"
+}

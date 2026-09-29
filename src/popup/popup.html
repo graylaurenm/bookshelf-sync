@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bookshelf Sync</title>
+  <link rel="stylesheet" href="../ui.css">
+  <style>
+    body { width: 380px; padding: 12px 14px 14px; }
+    header { display: flex; align-items: center; gap: 8px; }
+    header h1 { flex: 1; }
+    .counts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-top: 12px; }
+    .count { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; }
+    .count b { display: block; font-size: 18px; font-variant-numeric: tabular-nums; }
+    .count span { font-size: 11px; color: var(--muted); }
+    .count.review b { color: var(--warn); }
+    .count.errors b { color: var(--bad); }
+    #status { margin-top: 10px; min-height: 1.4em; }
+    .actions { display: flex; gap: 8px; margin-top: 8px; }
+    .item { border: 1px solid var(--line); border-radius: 8px; padding: 8px; margin-bottom: 6px; }
+    .item .t { font-weight: 600; }
+    .cand { display: flex; align-items: center; gap: 6px; margin-top: 4px; }
+    .cand a { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .row { display: flex; gap: 6px; margin-top: 6px; }
+    ul.log { list-style: none; padding: 0; margin: 0; font-size: 12px; }
+    ul.log li { padding: 3px 0; border-bottom: 1px solid var(--line); }
+    ul.log .a { font-weight: 600; }
+    .empty { color: var(--muted); font-style: italic; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bookshelf Sync</h1>
+    <span id="mode" class="badge"></span>
+    <a href="#" id="options">Options</a>
+  </header>
+
+  <div class="counts">
+    <div class="count"><b id="c-pending">–</b><span>pending</span></div>
+    <div class="count"><b id="c-synced">–</b><span>synced</span></div>
+    <div class="count review"><b id="c-review">–</b><span>needs review</span></div>
+    <div class="count errors"><b id="c-errors">–</b><span>errors</span></div>
+  </div>
+
+  <div id="status" class="muted"></div>
+  <div class="actions">
+    <button id="sync" class="primary">Sync now</button>
+  </div>
+
+  <h2>Needs review</h2>
+  <div id="review"></div>
+
+  <h2>Errors</h2>
+  <div id="errors"></div>
+
+  <h2 id="dry-h">Dry run — would write</h2>
+  <div id="dry"></div>
+
+  <h2>Recent activity</h2>
+  <ul class="log" id="log"></ul>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
